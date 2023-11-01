@@ -17,17 +17,13 @@ const TileGalleryContainer = styled.div`
   height: 100vh;
 `
 
-const StoryTemplate = (args: TileGalleryProps) => {
+export const Default: Story = (args: TileGalleryProps) => {
     return (
         <TileGalleryContainer>
             <TileGallery urls={args.urls}/>
         </TileGalleryContainer>
     )
 };
-
-export const Default: Story = (args: TileGalleryProps) => (
-    <StoryTemplate {...args}/>
-);
 
 Default.args = {
     urls: [

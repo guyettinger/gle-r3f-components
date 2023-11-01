@@ -18,7 +18,7 @@ const StarsContainer = styled.div`
   height: 100vh;
 `
 
-const StoryTemplate = (args: StarsProps) => {
+export const Default: Story = (args: StarsProps) => {
     return (
         <StarsContainer>
             <CanvasBackground>
@@ -26,10 +26,6 @@ const StoryTemplate = (args: StarsProps) => {
             </CanvasBackground>
         </StarsContainer>
     )
-};
-
-export const Default: Story = (args: StarsProps) => (
-    <StoryTemplate {...args}/>
-);
+}
 
 Default.args = {};

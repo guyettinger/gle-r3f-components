@@ -17,19 +17,15 @@ const MacbookContainer = styled.div`
   height: 100vh;
 `
 
-const StoryTemplate = (args: MacbookProps) => {
+export const Default: Story = (args: MacbookProps) => {
     return (
         <MacbookContainer>
             <Macbook meshPath={args.meshPath}>
                 <h2>Hello World!</h2>
             </Macbook>
         </MacbookContainer>
-    )
-};
-
-export const Default: Story = (args: MacbookProps) => (
-    <StoryTemplate {...args}/>
-);
+    );
+}
 
 Default.args = {
     meshPath: './meshes/macbook/mac-draco.glb'
