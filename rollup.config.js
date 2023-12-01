@@ -5,6 +5,7 @@ import dts from "rollup-plugin-dts";
 import terser from "@rollup/plugin-terser";
 import peerDepsExternal from "rollup-plugin-peer-deps-external";
 import css from "rollup-plugin-import-css";
+import glslify from "rollup-plugin-glslify";
 
 const packageJson = require("./package.json");
 
@@ -29,6 +30,7 @@ export default [
             peerDepsExternal(),
             resolve(),
             commonjs(),
+            glslify(),
             typescript({tsconfig: "./tsconfig.json"}),
             css(),
             terser()

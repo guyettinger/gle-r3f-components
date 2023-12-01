@@ -1,5 +1,6 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 import { mergeConfig } from "vite";
+import glslify from "vite-plugin-glslify";
 
 const config: StorybookConfig = {
     stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -24,7 +25,7 @@ const config: StorybookConfig = {
     viteFinal(config) {
         return mergeConfig(config, {
             base: "",
-            plugins: [],
+            plugins: [glslify()],
         });
     },
 };
