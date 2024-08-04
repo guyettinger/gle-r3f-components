@@ -1,6 +1,6 @@
 {
   "name": "gle-r3f-components",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "GLE R3F Components",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",

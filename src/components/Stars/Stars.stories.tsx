@@ -15,10 +15,10 @@ type Story = StoryObj<typeof Stars>;
 
 const StarsContainer = styled.div`
   width: 100vw;
-  height: 100vh;
+  height: 100vh; 
 `
 
-export const Default: Story = (args: StarsProps) => {
+export const Default: Story = ({}: StarsProps) => {
     return (
         <StarsContainer>
             <CanvasBackground>
