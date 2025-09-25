@@ -1,7 +1,8 @@
-import { ShaderMaterial } from "three";
-import { PlaneGeometryProps, RenderCallback } from "@react-three/fiber";
+import { ShaderMaterial, Vector3 } from "three";
+import { RenderCallback } from "@react-three/fiber";
 
-export interface ShaderPlaneProps extends PlaneGeometryProps {
+export interface ShaderPlaneProps {
     shaderMaterial: ShaderMaterial
-    renderCallback: RenderCallback
+    renderCallback: RenderCallback,
+  vertices?: Vector3[];
 }
